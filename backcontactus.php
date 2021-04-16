@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../../dbconfig.php");
+include("dbconfig.php");
 $names = $_POST['names'];
 $email = $_POST['email'];
 $message = $_POST['message'];
