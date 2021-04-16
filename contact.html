@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Digital Trend</title>
+    <!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="../../assets/css/templatemo-softy-pinko.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+         :root {
+            --color: #3c3163;
+            --transition-time: 0.5s;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Open Sans';
+            background: #fafafa;
+        }
+        
+        a {
+            color: inherit;
+        }
+        
+        .cards-wrapper {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 4rem;
+            padding: 4rem;
+            margin: 0 auto;
+            width: max-content;
+        }
+        
+        .card {
+            font-family: 'Heebo';
+            --bg-filter-opacity: 0.5;
+            background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+            height: 20em;
+            width: 15em;
+            font-size: 1.5em;
+            color: white;
+            border-radius: 1em;
+            padding: 1em;
+            /*margin: 2em;*/
+            display: flex;
+            align-items: flex-end;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 0 5em -1em black;
+            transition: all, var(--transition-time);
+            position: relative;
+            overflow: hidden;
+            border: 10px solid #ccc;
+            text-decoration: none;
+        }
+        
+        .card:hover {
+            transform: rotate(0);
+        }
+        
+        .card h1 {
+            margin: 0;
+            font-size: 1.5em;
+            line-height: 1.2em;
+        }
+        
+        .card p {
+            font-size: 0.75em;
+            font-family: 'Open Sans';
+            margin-top: 0.5em;
+            line-height: 2em;
+        }
+        
+        .card .tags {
+            display: flex;
+        }
+        
+        .card .tags .tag {
+            font-size: 0.75em;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 0.3rem;
+            padding: 0 0.5em;
+            margin-right: 0.5em;
+            line-height: 1.5em;
+            transition: all, var(--transition-time);
+        }
+        
+        .card:hover .tags .tag {
+            background: var(--color);
+            color: white;
+        }
+        
+        .card .date {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 0.75em;
+            padding: 1em;
+            line-height: 1em;
+            opacity: .8;
+        }
+        
+        .card:before,
+        .card:after {
+            content: '';
+            transform: scale(0);
+            transform-origin: top left;
+            border-radius: 50%;
+            position: absolute;
+            left: -50%;
+            top: -50%;
+            z-index: -5;
+            transition: all, var(--transition-time);
+            transition-timing-function: ease-in-out;
+        }
+        
+        .card:before {
+            background: #ddd;
+            width: 250%;
+            height: 250%;
+        }
+        
+        .card:after {
+            background: white;
+            width: 200%;
+            height: 200%;
+        }
+        
+        .card:hover {
+            color: var(--color);
+        }
+        
+        .card:hover:before,
+        .card:hover:after {
+            transform: scale(1);
+        }
+        
+        .card-grid-space .num {
+            font-size: 3em;
+            margin-bottom: 1.2rem;
+            margin-left: 1rem;
+        }
+        
+        .info {
+            font-size: 1.2em;
+            display: flex;
+            padding: 1em 3em;
+            height: 3em;
+        }
+        
+        .info img {
+            height: 3em;
+            margin-right: 0.5em;
+        }
+        
+        .info h1 {
+            font-size: 1em;
+            font-weight: normal;
+        }
+        /* MEDIA QUERIES */
+        
+        @media screen and (max-width: 1285px) {
+            .cards-wrapper {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media screen and (max-width: 900px) {
+            .cards-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .info {
+                justify-content: center;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .cards-wrapper {
+                padding: 4rem 2rem;
+            }
+            .card {
+                max-width: calc(100vw - 4rem);
+            }
+        }
+        
+        @media screen and (max-width: 450px) {
+            .info {
+                display: block;
+                text-align: center;
+            }
+            .info h1 {
+                margin: 0;
+            }
+        }
+        
+        .hero {
+            position: relative;
+            padding: 9em 0;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(170deg, var(--primary-color) 70%, var(--white-color) 30%);
+        }
+        
+        .hero-image {
+            position: relative;
+            top: 2em;
+        }
+        
+        .a {
+            background: var(--menu-bg);
+            z-index: 2;
+            top: 0;
+            right: 0;
+            left: 0;
+        }
+        /* BUTTON */
+        
+        .custom-btn {
+            background: transparent;
+            border: 2px solid var(--dark-color);
+            border-radius: var(--border-radius-large);
+            padding: 12px 26px 14px 26px;
+            color: var(--dark-color);
+            font-family: var(--title-font-family);
+            font-size: var(--p-font-size);
+            white-space: nowrap;
+        }
+        
+        .custom-btn.btn-bg {
+            background: var(--white-color);
+            color: var(--primary-color);
+            border-color: transparent;
+            transition: all .3s ease;
+        }
+        
+        .custom-btn:hover,
+        .custom-btn:focus {
+            background: var(--dark-color);
+            color: var(--white-color);
+            border-color: transparent;
+        }
+        
+         :root {
+            --background-dark: #ffffff;
+            --text-light: rgba(255, 255, 255, 0.6);
+            --text-lighter: rgba(255, 255, 255, 0.9);
+            --spacing-s: 8px;
+            --spacing-m: 16px;
+            --spacing-l: 24px;
+            --spacing-xl: 32px;
+            --spacing-xxl: 64px;
+            --width-container: 1200px;
+        }
+        
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        
+        body {
+            height: 100%;
+        }
+        
+        .hero-section {
+            align-items: flex-start;
+            /*background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);*/
+            display: flex;
+            min-height: 100%;
+            justify-content: center;
+            padding: var(--spacing-xxl) var(--spacing-l);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="a"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+
+                        <!--<img src="assets/images/logo.png" alt="Softy Pinko"/>-->
+
+                        <a class="logo" style="font-size: 25px;" style="color:#8261ee;"><i class="fa fa-line-chart"></i> <strong>Digital Trend</strong></a>
+
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../aboutus.html">About</a></li>
+                            <li><a href="../enterpreners\enterpreners.html">Entrepreneurs</a></li>
+                            <li>
+                                <a href="../enterpreners/mentor.html">Mentors</a>
+                            </li>
+                            <li><a href="../enterpreners/investor.html">Investors</a></li>
+                            <li><a href="../enterpreners/blogs.html">Blog Entries</a></li>
+                            <li><a href="#" class="active">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+
+    <section class="hero hero-bg d-flex justify-content-center align-items-center" style="
+padding-bottom: 30px;
+">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                    <div class="hero-text">
+
+                        <h1 class="text-white aos-init aos-animate" data-aos="fade-up">We are ready for your digital marketing</h1>
+                        <br>
+                        <a href="contact.html" class="custom-btn btn-bg btn mt-3 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">Let us discuss together!</a>
+
+                        <!--<strong class="d-block py-3 pl-5 text-white aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"><i class="fa fa-phone mr-2"></i> +99 080 070 4224</strong>-->
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="hero-image aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+
+                        <img src="https://ccoe.dsci.in/storage/2019/06/Untitled-5.png" class="img-fluid" alt="working girl">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="container-contact100">
+
+
+        <div class="wrap-contact100">
+            <span class="contact100-form-symbol">
+				<img src="images/icons/symbol-01.png" alt="SYMBOL-MAIL">
+			</span>
+
+            <form class="contact100-form validate-form flex-sb flex-w" action="backcontactus.php" method="POST">
+                <span class="contact100-form-title">
+					Drop Us A Message
+				</span>
+
+                <div class="wrap-input100 rs1 validate-input" data-validate="Name is required">
+                    <input class="input100" type="text" name="names" placeholder="Name" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 rs1 validate-input" data-validate="Email is required: e@a.z">
+                    <input class="input100" type="text" name="email" placeholder="Email Address" required>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Message is required">
+                    <textarea class="input100" name="message" placeholder="Write Us A Message" required></textarea>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+						Send
+					</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section class="section padding-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                    <div class="left-heading">
+                        <h2 class="section-title">Tell Us How We Can Help You</h2>
+                    </div>
+                    <div class="left-text">
+                        <p>Use our online form to send your initial thoughts and let us know what you need help with. Whether it’s designing a stunning website, create a useful web application, or develop a marketing strategy, we’re eager to assist you.
+                        </p>
+                        <p style="font-size: large;"><strong> Visit Us </strong> </p>
+                        <p>1875 René-Lévesque W, Suite A <br>Montréal (QC) H3H 1R4, Canada</p>
+                        <p style="font-size: large;"> Email US </p>
+                        <p>
+                            info@marketingwebsites.ca
+                        </p>
+                        <p style="font-size: large;">
+                            Call Us
+                        </p>
+                        <p>
+                            +1 514-360-2187
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <img src="https://cdn.dribbble.com/users/2065768/screenshots/4438259/whatwedo---dribbble.gif" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!----  <p class="copyright">Copyright &copy; 2020 Softy Pinko Company - Design: TemplateMo</p>
+                  -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+    <script src="js/map-custom.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../../assets/js/popper.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="../../assets/js/scrollreveal.min.js"></script>
+    <script src="../../assets/js/waypoints.min.js"></script>
+    <script src="../../assets/js/jquery.counterup.min.js"></script>
+    <script src="../../assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="../../assets/js/custom.js"></script>
+</body>
+
+</html>
